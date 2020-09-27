@@ -1,0 +1,9 @@
+extends layout
+
+
+block content
+  h1= "Your user info:"
+  h2= title
+
+  form(method="GET" action="/")
+    button.btn.btn-primary(type="submit") Home

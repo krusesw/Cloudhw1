@@ -1,0 +1,12 @@
+extends layout
+
+
+block content
+  h1= title
+  p Welcome to my basic login validation page. Please sign up or login below.
+
+  form(method="POST" action="/loginBT")
+    button.btn.btn-primary(type="submit") Login
+    
+  form(method="POST" action="/signupBT")
+    button.btn.btn-primary(type="submit") Signup

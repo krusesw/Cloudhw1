@@ -1,0 +1,13 @@
+extends layout
+
+
+block content
+  h2= title
+  p Welcome to my basic login page. Please sign in below.
+
+  form(method="POST" action="/login")
+    div.form-group
+      input.form-control(type="text" id="Username" placeholder="Username" name="Username")
+    div.form-group
+      input.form-control(type="text" id="Password" placeholder="Password" name="Password")
+    button.btn.btn-primary(type="submit") Login

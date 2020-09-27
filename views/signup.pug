@@ -1,0 +1,19 @@
+extends layout
+
+
+block content
+  h2= title
+  p Welcome to my basic signup page. Please sign up below.
+
+  form(method="POST" action="/signupCheck")
+    div.form-group
+      input.form-control(type="text" id="Username" placeholder="Username" name="Username")
+    div.form-group
+      input.form-control(type="text" id="Password" placeholder="Password" name="Password")
+    div.form-group
+      input.form-control(type="text" id="FirstName" placeholder="FirstName" name="FirstName")
+    div.form-group
+      input.form-control(type="text" id="LastName" placeholder="LastName" name="LastName")
+    div.form-group
+      input.form-control(type="text" id="Email" placeholder="Email" name="Email")
+    button.btn.btn-primary(type="submit") Signup
